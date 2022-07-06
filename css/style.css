@@ -1,0 +1,314 @@
+/* Define Font Families and Names */
+@font-face {
+   font-family: Special;
+   src: url(../fonts/Courgette-Regular.ttf);
+   font-size: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: Nunito-Light;
+   src: url(../fonts/Nunito-Light.ttf);
+   font-size: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: Nunito-Regular;
+   src: url(../fonts/Nunito-Regular.ttf);
+   font-size: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: Nunito-Medium;
+   src: url(../fonts/Nunito-Medium.ttf);
+   font-size: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: Nunito-Bold;
+   src: url(../fonts/Nunito-Bold.ttf);
+   font-size: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: Nunito-Extra;
+   src: url(../fonts/Nunito-ExtraBold.ttf);
+   font-size: 900;
+   font-style: normal;
+}
+
+
+/* Neutralize Webpage */
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   color: white;
+   width: 100%;
+   font-family: Nunito-Regular;
+}
+
+
+/* Global Styles */
+body{
+   background-color: #202124;
+}
+.special-text{
+   color: #00ffae;
+}
+.cta-btn{
+   width: 180px;
+   height: 50px;
+   z-index: 100;
+   color: black;
+   border: 2px solid #00a973;
+   background-color: #00ffae;
+   font-family: Nunito-Extra;
+   font-size: 16px;
+}
+.title{
+   width: 70%;
+   text-align: center;
+   line-height: 1.1;
+   font-family: Nunito-Extra;
+   margin-bottom: 15px;
+}
+.subtitle{
+   width: 50%;
+   text-align: center;
+   z-index: 100;
+   font-family: Nunito-Medium;
+   color: white;
+   margin-bottom: 60px;
+}
+.section-default{
+   width: 100%;
+   height: 100%;
+   margin: 10% 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+/* Header (Banner Section) */
+#banner{
+   width: 100%;
+   height: 100vh;
+   max-height: 720px;
+   background-image: url(../images/donation0.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+#banner__gradient-overlay{
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(20 20 21 / 61%) 100%);
+   display: block;
+   position: absolute;
+   z-index: 1;
+}
+#banner__heading{
+   font-size: 60px;
+   z-index: 100;
+}
+#banner__heading span{
+   font-family: Nunito-Extra;
+}
+#banner__subtitle{
+   font-size: 22px;
+}
+#CTA{
+   margin-bottom: 8%;
+}
+
+
+/* donate */
+#donate{
+   
+}
+#donate__heading{
+   font-size: 50px;
+}
+#donate__subtitle{
+   font-size: 20px;
+}
+#donate__selection{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 80px;
+}
+#donate__selection ul{
+   width: 50%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   list-style-type: none;
+}
+#donate__selection ul li{
+   width: 130px;
+   height: 130px;
+   background-color: #33353980;
+   border: 5px solid #333539;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 20px;
+   font-weight: bold;
+}
+#donate__selection ul li:nth-child(2){
+   background-color: #50535980;
+   border: 5px solid #339778c4;
+}
+#donate__amount{
+   width: 40%;
+   background-color: transparent;
+   border: 0;
+   border-bottom: 2px solid #595c62;
+   height: 40px;
+   padding: 0 20px;
+   font-size: 18px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+#donate__amount:focus{
+   outline: 0;
+}
+
+
+
+
+#donation-plan{}
+#donation-plan__heading{
+   font-size: 50px;
+}
+#donation-plan__subtitle{
+   font-size: 20px;
+}
+#donation-plan__benefits{
+   width: 75%;
+}
+#donation-plan__benefits ul{
+   display: flex;
+   justify-content: space-between;
+}
+#donation-plan__benefits ul li{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 350px;
+   padding: 55px 25px;
+}
+#donation-plan__benefits ul li svg{
+   width: 70px;
+   margin-bottom: 35px;
+   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(70deg) brightness(99%) contrast(107%);
+}
+#donation-plan__benefits ul li:nth-child(1){
+   background-color: #4a999740;
+}
+#donation-plan__benefits ul li:nth-child(2){
+   background-color: #97994a40;
+}
+#donation-plan__benefits ul li:nth-child(3){
+   background-color: #944a9940;
+}
+#donation-plan__benefits ul li h3{
+   font-size: 25px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+#donation-plan__benefits ul li p{
+   font-size: 17px;
+   text-align: center;
+}
+
+
+
+
+
+#updates__heading{
+   font-size: 50px;
+}
+#updates__subtitle{
+   font-size: 20px;
+}
+#updates__subscribe{
+   width: 55%;
+   padding: 90px 0;
+   display: flex;
+   justify-content: center;
+   background-color: #ffcb764a;
+}
+#updates__subscribe input{
+   width: 300px;
+   padding: 0 20px;
+   font-size: 18px;
+   color: black;
+}
+#updates__subscribe button{
+   width: 150px;
+}
+#updates__subscribe input:focus{
+   outline: 0;
+}
+
+
+
+
+
+#footer{
+   margin-bottom: 0;
+   background-color: #1b1b1d;
+   padding: 40px 0 20px 0;
+   border-top: 2px solid #37373b70;
+}
+#footer__heading{
+   font-size: 35px;
+   color: rgb(255, 132, 0);
+   margin-bottom: 0;
+   font-family: Special;
+   margin-bottom: 15px;
+}
+#footer__quote {
+   font-size: 22px;
+   font-style: italic;
+   line-height: 1.2;
+   margin-bottom: 30px;
+}
+#author{
+   font-size: 16px;
+}
+#footer__social-icons{
+   display: flex;
+   justify-content: space-between;
+   width: 15%;
+}
+#footer__social-icons svg{
+   color: white;
+   width: 25px;
+}
+#footer__social-icons div{
+   width: 55px;
+   height: 55px;
+   border-radius: 1000px;
+   background-color: #2a2a2da3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#footer__social-icons div:nth-child(1) svg, #footer__social-icons div:nth-child(2) svg{
+   fill: white;
+}
+#news__list ul{
+   
+}
