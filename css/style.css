@@ -6,12 +6,6 @@
    font-style: normal;
 }
 @font-face {
-   font-family: Nunito-Light;
-   src: url(../fonts/Nunito-Light.ttf);
-   font-size: 300;
-   font-style: normal;
-}
-@font-face {
    font-family: Nunito-Regular;
    src: url(../fonts/Nunito-Regular.ttf);
    font-size: 400;
@@ -21,12 +15,6 @@
    font-family: Nunito-Medium;
    src: url(../fonts/Nunito-Medium.ttf);
    font-size: 500;
-   font-style: normal;
-}
-@font-face {
-   font-family: Nunito-Bold;
-   src: url(../fonts/Nunito-Bold.ttf);
-   font-size: bold;
    font-style: normal;
 }
 @font-face {
@@ -51,6 +39,9 @@
 /* Global Styles */
 body{
    background-color: #202124;
+}
+ul{
+   list-style-type: none;
 }
 .special-text{
    color: #00ffae;
@@ -309,6 +300,54 @@ body{
 #footer__social-icons div:nth-child(1) svg, #footer__social-icons div:nth-child(2) svg{
    fill: white;
 }
+
+
+
+#news__heading{
+   font-size: 50px;
+}
+#news__subtitle{
+   font-size: 20px;
+} 
+
+
+#news__list{
+   display: flex;
+   justify-content: center;
+}
+#news__list *{
+   width: 100%;
+   box-sizing: border-box !important;
+}
 #news__list ul{
-   
+   width: 75%;
+   display: flex;
+   justify-content: space-between;
+}
+#news__list ul li{
+   max-width: 350px;
+   background-color: rgb(255 255 255 / 4%);
+}
+#news__list ul li img{
+   max-width: 350px;
+   max-height: 220px;
+}
+#news__list ul li h3{
+   width: 100%;
+   margin: 20px 0 10px 0;
+   font-size: 22px;
+   text-align: center;
+}
+#news__list ul li p{
+   text-align: center;
+   padding: 0 20px 10px 20px;
+}
+#news__list ul li a{
+   width: auto;
+   display: inline-block;
+   text-decoration: none;
+   font-weight: 900;
+   margin: 20px 40px;
+   float: right;
+   color: #00a973;
 }
